@@ -886,7 +886,7 @@ function App() {
                           {isUserObject(transaction.id_user) ? transaction.id_user.username : '-'}
                         </td>
                         <td>
-                          {formatNumber(transaction.stok_sebelum)} -> {formatNumber(transaction.stok_sesudah)}
+                          {formatNumber(transaction.stok_sebelum)} {'->'} {formatNumber(transaction.stok_sesudah)}
                         </td>
                         <td className="row-actions">
                           <button type="button" onClick={() => beginEditTransaction(transaction)}>
